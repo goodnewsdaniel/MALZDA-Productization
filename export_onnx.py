@@ -49,7 +49,7 @@ def export_framework_to_onnx():
         (dummy_packet, dummy_flow, dummy_campaign),
         output_onnx_path,
         export_params=True,
-        opset_version=14,  # Modern stable opset supporting sequence processing layers
+        opset_version=18,  # Latest stable opset with full operator support and better compatibility
         do_constant_folding=True,
         input_names=['packet_input', 'flow_input', 'campaign_input'],
         output_names=['fused_embedding'],
