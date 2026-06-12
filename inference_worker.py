@@ -1,3 +1,11 @@
+'''Inference Worker for MAL-ZDA Framework
+This script defines the Inference Worker component of the MAL-ZDA framework.
+The worker consumes network telemetry data from a Kafka topic, processes it, and forwards it to a FastAPI microservice for anomaly detection.
+It handles the integration between the data ingestion layer and the inference engine, ensuring that incoming data is correctly formatted 
+and that results are logged for monitoring and analysis.
+The worker is designed to be lightweight and efficient, suitable for deployment in edge environments where real-time processing is critical.    
+    '''
+
 import json
 import requests
 from confluent_kafka import Consumer, KafkaError

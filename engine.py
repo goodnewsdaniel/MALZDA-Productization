@@ -1,3 +1,12 @@
+'''
+Zero-Day Inference Engine
+This module defines the ZeroDayInferenceEngine class, 
+which manages class prototypes and computes anomaly scores for incoming query embeddings. 
+It uses Euclidean distance to compare the query embedding against known class prototypes 
+and determines if the input is a zero-day candidate based on a predefined anomaly threshold. 
+The engine is designed to be lightweight and efficient for real-time inference in edge environments.
+'''
+
 import os
 from typing import Optional
 

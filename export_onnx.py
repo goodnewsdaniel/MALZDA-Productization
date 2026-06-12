@@ -1,3 +1,7 @@
+'''ONNX Export Script for MAL-ZDA Framework 
+This script initializes the MAL-ZDA architecture, loads the trained weights from a checkpoint,
+and exports the hierarchical encoder component to ONNX format.  '''
+
 import os
 import torch
 import numpy as np

@@ -1,3 +1,10 @@
+'''Edge Producer Script
+This script simulates an edge agent that extracts features from network flows
+and sends them to a Kafka topic for further processing. 
+It generates random data to mimic real network telemetry 
+and continuously streams it to the Kafka cluster.'''
+
+
 import json
 import time
 import random
